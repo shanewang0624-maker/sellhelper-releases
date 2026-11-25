@@ -48,7 +48,7 @@ Get-FileHash .\WeChatHelper_v2.1.3_Windows_x64.zip -Algorithm SHA256
 结果应与 `SHA256SUMS.txt` 一致：
 
 ```
-8d367d500e94aaac72bdffbc6f3c67a18a349d7ebf9ace04c482b9536e8e33e4
+1b82ea9099e682505dd18387efe22deda023bcb686510926fb8b64ee19c66a64
 ```
 
 > ⚠️ **关于系统提示"未知发布者"**：本版本**未购买商业代码签名证书**，Windows SmartScreen 可能弹窗拦截。
