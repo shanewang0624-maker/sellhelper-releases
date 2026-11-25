@@ -42,13 +42,13 @@
 ## 3. 校验文件完整性
 
 ```
-Get-FileHash .\WeChatHelper_v2.1.2_Windows_x64.zip -Algorithm SHA256
+Get-FileHash .\WeChatHelper_v2.1.3_Windows_x64.zip -Algorithm SHA256
 ```
 
 结果应与 `SHA256SUMS.txt` 一致：
 
 ```
-311be1238bf7da544c8cdc9cffeff95e4508e2a914b84c7c38e87e142066ad6f
+8d367d500e94aaac72bdffbc6f3c67a18a349d7ebf9ace04c482b9536e8e33e4
 ```
 
 > ⚠️ **关于系统提示"未知发布者"**：本版本**未购买商业代码签名证书**，Windows SmartScreen 可能弹窗拦截。
@@ -62,6 +62,9 @@ Get-FileHash .\WeChatHelper_v2.1.2_Windows_x64.zip -Algorithm SHA256
 - 本版本**不含任何远程统计/遥测**。
 - 唯一的外发是你自己配置的 AI 接口，以及你自己填的 Webhook 地址。
 - 可把指定会话设为隐私屏蔽，过滤发生在数据层，Agent 拿不到内容。
+- **手机看板也不出局域网**：手机端是这台电脑自己起的一个网页，没有中转服务器、没有云端账号。
+  挡三层：监听地址（关掉开关就只听本机）、6 位配对码换来的设备令牌、只读路径白名单（写接口一律 403）。
+  手机上只能看（简报 / 会话 / 摘要 / 搜索 / 问一句），改设置、删数据、看密钥都做不到。
 
 ---
 
