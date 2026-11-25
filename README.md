@@ -10,7 +10,7 @@
 
 ## 1. 下载与安装
 
-1. 到右侧 **Releases** 下载最新版 `微信助手_vX.Y.Z_Windows_x64.zip` 与 `SHA256SUMS.txt`。
+1. 到右侧 **Releases** 下载最新版 `WeChatHelper_vX.Y.Z_Windows_x64.zip` 与 `SHA256SUMS.txt`。
 2. 解压到**可写目录**，例如 `D:\微信助手`。
    **不要放 `C:\Program Files`** —— 那里写数据需要管理员权限，会导致软件起不来。
    路径里避免 `#`、`&` 这类符号（中文与空格没问题）。
@@ -42,7 +42,7 @@
 ## 3. 校验文件完整性
 
 ```
-Get-FileHash .\微信助手_v2.1.2_Windows_x64.zip -Algorithm SHA256
+Get-FileHash .\WeChatHelper_v2.1.2_Windows_x64.zip -Algorithm SHA256
 ```
 
 结果应与 `SHA256SUMS.txt` 一致：
