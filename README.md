@@ -42,14 +42,16 @@
 ## 3. 校验文件完整性
 
 ```
-Get-FileHash .\WeChatHelper_v2.1.3_Windows_x64.zip -Algorithm SHA256
+Get-FileHash .\WeChatHelper_v2.2.2_Windows_x64.zip -Algorithm SHA256
 ```
 
-结果应与 `SHA256SUMS.txt` 一致：
+结果应与该 Release 附件里的 `SHA256SUMS.txt` 一致：
 
 ```
-1b82ea9099e682505dd18387efe22deda023bcb686510926fb8b64ee19c66a64
+6071bfc6e5c4874a49d5dbeffbffea23f6a3b49c5a1919834f407464b7e79328
 ```
+
+> 换版本后这一行会变。请以**你下载的那个 Release 附件**里的 `SHA256SUMS.txt` 为准，不要照抄 README 里的历史值。
 
 > ⚠️ **关于系统提示"未知发布者"**：本版本**未购买商业代码签名证书**，Windows SmartScreen 可能弹窗拦截。
 > 这是未签名的正常表现，不是文件损坏。点「更多信息 → 仍要运行」，并用上面的 SHA-256 校验完整性。
