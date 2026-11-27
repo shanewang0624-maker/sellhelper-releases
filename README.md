@@ -42,13 +42,13 @@
 ## 3. 校验文件完整性
 
 ```
-Get-FileHash .\WeChatHelper_v2.2.2_Windows_x64.zip -Algorithm SHA256
+Get-FileHash .\WeChatHelper_v<版本号>_Windows_x64.zip -Algorithm SHA256
 ```
 
-结果应与该 Release 附件里的 `SHA256SUMS.txt` 一致：
+文件名里的版本号换成你实际下载的那个。结果应与**那个 Release 附件里的** `SHA256SUMS.txt` 逐字符一致（当前 v2.3.6 是）：
 
 ```
-6071bfc6e5c4874a49d5dbeffbffea23f6a3b49c5a1919834f407464b7e79328
+17ba1ecc7ebf0dfabbe7acc7fd428ceec08d309191437ea2a0c12d76c2f0410d
 ```
 
 > 换版本后这一行会变。请以**你下载的那个 Release 附件**里的 `SHA256SUMS.txt` 为准，不要照抄 README 里的历史值。
